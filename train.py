@@ -84,7 +84,7 @@ def main_run(args):
     joblib.dump(SVM_model_out, os.path.join(out_dirt, out_module))
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='create data')
+    parser = argparse.ArgumentParser(description='train')
     parser.add_argument('--SVM-C', type=float, default=1e6)
     parser.add_argument('--data-pretrained', type=str, default='vggface2', help='choose between vggface2 and casia-webface')
     args = parser.parse_args()

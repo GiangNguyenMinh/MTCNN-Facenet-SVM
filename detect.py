@@ -37,7 +37,7 @@ def main_run(args):
     cv.destroyAllWindows()
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='create data')
+    parser = argparse.ArgumentParser(description='detect face')
     parser.add_argument('--show-landmark', action='store_true', help='check whether show landmark of not')
     args = parser.parse_args()
     main_run(args)
